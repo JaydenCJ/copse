@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="440" viewBox="0 0 760 440" font-family="Menlo, Consolas, monospace" font-size="14">
+  <rect width="760" height="440" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="380" y="27" fill="#8b949e" text-anchor="middle" font-size="12">copse — task-scoped git worktrees</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> copse new rate-limit --note "429 retry middleware"</text>
+    <text x="24" y="86">created task <tspan fill="#79c0ff">rate-limit</tspan></text>
+    <text x="24" y="108">  branch    copse/rate-limit  (from main @ fccab37)</text>
+    <text x="24" y="130">  worktree  ../acme-api.copse/rate-limit</text>
+    <text x="24" y="152">  carried   <tspan fill="#7ee787">.env, services/worker/.env.local</tspan></text>
+    <text x="24" y="190"><tspan fill="#7ee787">$</tspan> copse ls</text>
+    <text x="24" y="214" fill="#d2a8ff">NAME        STATE   DIRTY  AHEAD  BEHIND  BRANCH</text>
+    <text x="24" y="236">auth-retry  <tspan fill="#f778ba">merged</tspan>  -          0       1  copse/auth-retry</text>
+    <text x="24" y="258">rate-limit  <tspan fill="#7ee787">fresh</tspan>   -          0       2  copse/rate-limit</text>
+    <text x="24" y="280" fill="#8b949e">  └─ 429 retry middleware</text>
+    <text x="24" y="318"><tspan fill="#7ee787">$</tspan> copse prune</text>
+    <text x="24" y="342"><tspan fill="#f778ba">prune</tspan>  auth-retry  merged into main (ancestor)</text>
+    <text x="24" y="364"><tspan fill="#79c0ff">keep</tspan>   rate-limit  no commits yet</text>
+    <text x="24" y="396" fill="#8b949e">pruned 1, kept 1, skipped 0 (base: main)</text>
+    <text x="24" y="424" fill="#8b949e"># squash and rebase merges are detected too — see docs/lifecycle.md</text>
+  </g>
+</svg>
